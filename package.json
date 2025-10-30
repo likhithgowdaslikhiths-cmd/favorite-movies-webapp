@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js"
-  },
+  "dev": "nodemon src/index.ts",
+  "build": "tsc",
+  "start": "yarn build && node dist/index.js"
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
