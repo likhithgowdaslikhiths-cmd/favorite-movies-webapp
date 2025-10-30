@@ -1,0 +1,22 @@
+// Prisma schema for Favorite Movies App
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Movie {
+  id        Int      @id @default(autoincrement())
+  title     String
+  type      String   // Movie or TV Show
+  director  String
+  budget    String
+  location  String
+  duration  String
+  yearTime  String
+  createdAt DateTime @default(now())
+}
