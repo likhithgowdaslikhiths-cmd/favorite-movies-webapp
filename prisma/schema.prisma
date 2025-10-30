@@ -16,7 +16,7 @@ model Movie {
   director  String
   budget    String
   location  String
-  duration  String
-  yearTime  String
+  duration  String?   // ✅ optional now
+  yearTime  String?   // ✅ optional now
   createdAt DateTime @default(now())
 }
