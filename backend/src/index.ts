@@ -6,7 +6,9 @@ import movieRoutes from "./routes/movieRoutes";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://favorite-movies-webapp.vercel.app"
+}));
 app.use(express.json());
 
 // Default route
