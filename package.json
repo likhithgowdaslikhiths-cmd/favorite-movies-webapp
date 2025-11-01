@@ -6,8 +6,8 @@
   "scripts": {
   "dev": "nodemon src/index.ts",
   "build": "tsc",
-  "start": "yarn build && node dist/index.js"
-},
+"start": "npm run build && node dist/index.js"
+},    
 
   "keywords": [],
   "author": "",
