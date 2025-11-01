@@ -5,6 +5,9 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "esModuleInterop": true,
-    "strict": true
-  }
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src", "prisma"],   // ✅ add prisma so seed compiles
+  "exclude": ["node_modules", "dist"]
 }
